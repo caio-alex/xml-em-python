@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NFe>
+    <infNFe Id="NFe35180514200990000662550010001084301084304100" versao="4.00">
+        <ide>
+            <cUF>35</cUF>
+            <cNF>10843041</cNF>
+            <natOp>Venda de mercadoria</natOp>
+            <mod>55</mod>
+            <serie>1</serie>
+            <nNF>10843</nNF>
+            <dhEmi>2025-02-17T12:00:00-03:00</dhEmi>
+            <dhSaiEnt>2025-02-18T08:30:00-03:00</dhSaiEnt>
+        </ide>
+        <emit>
+            <CNPJ>14200990000662</CNPJ>
+            <xNome>Empresa Teste LTDA</xNome>
+        </emit>
+        <dest>
+            <CNPJ>12345678000195</CNPJ>
+            <xNome>Cliente Exemplo SA</xNome>
+        </dest>
+        <det nItem="1">
+            <prod>
+                <cProd>12345</cProd>
+                <xProd>Produto Teste</xProd>
+                <NCM>85044090</NCM>
+                <CFOP>5102</CFOP>
+                <uCom>UN</uCom>
+                <qCom>10.00</qCom>
+                <vUnCom>50.00</vUnCom>
+                <vProd>500.00</vProd>
+            </prod>
+        </det>
+        <total>
+            <ICMSTot>
+                <vNF>500.00</vNF>
+            </ICMSTot>
+        </total>
+        <infAdic>
+            <infCpl>Venda realizada com sucesso</infCpl>
+        </infAdic>
+    </infNFe>
+</NFe>
