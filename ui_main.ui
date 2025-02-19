@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
+    <width>630</width>
     <height>361</height>
    </rect>
   </property>
@@ -150,40 +150,6 @@ QPushButton:hover{
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btn_sobre">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-color: #fff;
-background-color: #008cdd;
-border-radius:10px;
-}
-
-
-QPushButton:hover{
-	background-color:#0086b3;
-}</string>
-         </property>
-         <property name="text">
-          <string>Sobre</string>
-         </property>
-        </widget>
-       </item>
-       <item>
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -229,332 +195,16 @@ QPushButton:hover{
           <number>0</number>
          </property>
          <widget class="QWidget" name="pg_table">
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
-            <widget class="QTabWidget" name="tb_base">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
+            <widget class="QPushButton" name="btn_exel">
+             <property name="text">
+              <string>Gerar Exel</string>
              </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgb(235, 235, 235);</string>
-             </property>
-             <property name="currentIndex">
-              <number>1</number>
-             </property>
-             <widget class="QWidget" name="tables">
-              <attribute name="title">
-               <string>Base</string>
-              </attribute>
-              <layout class="QVBoxLayout" name="verticalLayout_6">
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_2"/>
-               </item>
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_4">
-                 <item>
-                  <layout class="QVBoxLayout" name="verticalLayout_5">
-                   <item>
-                    <layout class="QGridLayout" name="gridLayout_2">
-                     <item row="0" column="0">
-                      <widget class="QLabel" name="label_3">
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color:#0056b3;</string>
-                       </property>
-                       <property name="text">
-                        <string>Estoque</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QTreeWidget" name="tw_estoque">
-                       <column>
-                        <property name="text">
-                         <string>NFe</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>serie</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>data_emissao</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>chave</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>cnpj_emitente</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>nome_emitente</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>valorNfe</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>itemNota</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>cod</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>qntd</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>descricao</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>unidade_medida</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>valorProd</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>data_importacao</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>usuario</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>data_saida</string>
-                        </property>
-                       </column>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QGridLayout" name="gridLayout">
-                     <item row="0" column="0">
-                      <widget class="QLabel" name="label_2">
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color:#0056b3;</string>
-                       </property>
-                       <property name="text">
-                        <string>Saída</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QTreeWidget" name="tw_saida">
-                       <column>
-                        <property name="text">
-                         <string notr="true">Nfe</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>serie</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>data_importacao</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>data_saida</string>
-                        </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>usuario</string>
-                        </property>
-                       </column>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_3">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_4">
-                    <item>
-                     <widget class="QPushButton" name="btn_gerar">
-                      <property name="styleSheet">
-                       <string notr="true">QPushButton{
-color: #fff;
-background-color: #008cdd;
-
-}
-
-
-QPushButton:hover{
-	background-color:#0086b3;
-
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>gerar saída</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QPushButton" name="btn_extorno">
-                      <property name="styleSheet">
-                       <string notr="true">QPushButton{
-color: #fff;
-background-color: #008cdd;
-
-}
-
-
-QPushButton:hover{
-	background-color:#0086b3;
-
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>extorno</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <spacer name="verticalSpacer_2">
-                      <property name="orientation">
-                       <enum>Qt::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>20</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </widget>
-             <widget class="QWidget" name="estoque">
-              <attribute name="title">
-               <string>Estoque</string>
-              </attribute>
-              <layout class="QVBoxLayout" name="verticalLayout_9">
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_14">
-                 <item>
-                  <widget class="QPushButton" name="btn_grafico">
-                   <property name="styleSheet">
-                    <string notr="true">
-QPushButton{
-color: #fff;
-background-color: #008cdd;
-
-}
-
-
-QPushButton:hover{
-	background-color:#0086b3;
-
-}</string>
-                   </property>
-                   <property name="text">
-                    <string>Gráfico</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QPushButton" name="btn_exel">
-                   <property name="styleSheet">
-                    <string notr="true">
-QPushButton{
-color: #fff;
-background-color: #008cdd;
-
-}
-
-
-QPushButton:hover{
-	background-color:#0086b3;
-
-}</string>
-                   </property>
-                   <property name="text">
-                    <string>Exel</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <widget class="QLineEdit" name="txt_filtro">
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="placeholderText">
-                  <string>Filtro de busca</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QTableView" name="tb_geral"/>
-               </item>
-              </layout>
-             </widget>
             </widget>
+           </item>
+           <item>
+            <widget class="QTableView" name="tb_geral"/>
            </item>
           </layout>
          </widget>
@@ -665,21 +315,7 @@ QPushButton:hover{
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="pg_sobre">
-          <widget class="QLabel" name="label_15">
-           <property name="geometry">
-            <rect>
-             <x>250</x>
-             <y>70</y>
-             <width>91</width>
-             <height>21</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Sobre o sistema</string>
-           </property>
-          </widget>
-         </widget>
+         <widget class="QWidget" name="pg_sobre"/>
          <widget class="QWidget" name="pg_home">
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
@@ -688,7 +324,7 @@ QPushButton:hover{
               <string notr="true"/>
              </property>
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#0056b3;&quot;&gt;Gerenciamento de produtos&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#0056b3;&quot;&gt;com &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffaa00;&quot;&gt;Python&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#0056b3;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#0056b3;&quot;&gt;Leitor de arquivo xml&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#0056b3;&quot;&gt;com &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffaa00;&quot;&gt;Python&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#0056b3;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>

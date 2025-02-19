@@ -8,12 +8,10 @@ class Read_xml():
         self.directory = directory
 
     def all_files(self):
-        """ Lista todos os arquivos XML no diretório """
         return [os.path.join(self.directory, arq) for arq in os.listdir(self.directory)
                 if arq.lower().endswith(".xml")]
 
     def remove_namespace(self, tree):
-        """ Remove namespaces do XML para facilitar a busca """
         for elem in tree.iter():
             if '}' in elem.tag:
                 elem.tag = elem.tag.split('}', 1)[1]  # Remove namespace
